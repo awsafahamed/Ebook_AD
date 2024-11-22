@@ -1,0 +1,29 @@
+﻿@model IEnumerable<EBOOK_AD.Models.Feedback>
+
+@{
+    ViewData["Title"] = "Feedback";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Customer ID</th>
+            <th>Content</th>
+            <th>Rating</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var feedback in Model)
+        {
+            <tr>
+                <td>@feedback.UserId</td>
+                <td>@feedback.Comment</td>
+                <td>@feedback.Rating</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Create", "Feedback")" class="btn btn-primary">Give Feedback</a>

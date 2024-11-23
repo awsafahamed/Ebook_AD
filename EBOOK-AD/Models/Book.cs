@@ -12,6 +12,10 @@ namespace EBOOK_AD.Models
         public string Title { get; set; }
 
         [Required]
+        [StringLength(200)]
+        public string Category { get; set; }
+
+        [Required]
         [StringLength(100)]
         public string Author { get; set; }
 
@@ -23,5 +27,8 @@ namespace EBOOK_AD.Models
 
         [StringLength(1000)]
         public string Description { get; set; }
+
+        [StringLength(500)]
+        public string ImageUrl { get; set; } // Stores the image path or URL
     }
 }

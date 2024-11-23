@@ -189,6 +189,22 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\images\\about-us.png",
+      "PackagePath": "staticwebassets\\images\\about-us.png"
+    },
+    {
+      "Id": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\images\\book.json",
+      "PackagePath": "staticwebassets\\images\\book.json"
+    },
+    {
+      "Id": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\images\\images.jpeg",
+      "PackagePath": "staticwebassets\\images\\images.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
       "Id": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

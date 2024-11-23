@@ -3,27 +3,151 @@
 }
 
 
-<div class="container mt-4">
-    <div class="jumbotron text-center">
-        <h1 class="display-4">Welcome to Ebook Web</h1>
-        <p class="lead">Discover and purchase your favorite books online.</p>
-        <hr class="my-4">
-        <p>Explore our collection and manage your orders effortlessly.</p>
-        <a class="btn btn-primary btn-lg" href="/Books" role="button">Browse Books</a>
-    </div>
+<section id="hero" class="d-flex align-items-center">
+    <div class="h-100">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col-md-6 justify-content-center order-2 order-md-1">
+                <div class="typography">
+                    <h1>
+                        Discover Your Next Adventure
+                    </h1>
+                    <h3 data-aos="fade-up">
+                        Explore our extensive collection of eBooks 
+                        Listening <br> and find your new favorite.
+                    </h3>
 
-    <div class="row mt-5">
-        <div class="col-md-4">
-            <h3>Wide Collection</h3>
-            <p>Browse through a wide range of genres, including fiction, non-fiction, educational, and more.</p>
+
+
+                </div>
+                <br>
+                <a data-aos="fade-up"
+                   href=""
+                   class="btn-anim "> Explore Books</a>
+
+
+               
+
+            </div>
+
+            <div class="col-md-6 order-1 order-md-2  lottie p-3">
+                <div id="lottie-container"></div>
+            </div>
+
+
+
         </div>
-        <div class="col-md-4">
-            <h3>Easy Ordering</h3>
-            <p>Order books online with ease and manage your purchases from your account dashboard.</p>
-        </div>
-        <div class="col-md-4">
-            <h3>Secure Payments</h3>
-            <p>Enjoy safe and secure payment options while shopping for your favorite titles.</p>
+
+</section>
+
+
+
+<section id="about" class="bg-light h-100 p-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="images/about-us.png" class="img-fluid" alt="About Us">
+            </div>
+            <div class="col-md-6">
+                <h2>About Us</h2>
+                <p>We are passionate about bringing stories to life through eBooks and audiobooks. Our mission is to make reading accessible and enjoyable for everyone.</p>
+                <a href="#features" class="btn-anim">Learn More</a>
+            </div>
         </div>
     </div>
-</div>
+</section>
+
+<section id="books" class="p-5 h-100 text-center">
+    <div class="container">
+        <h2 class="mb-4">Our Latest eBooks</h2>
+        <div class="row">
+            <!-- Book 1 -->
+            <div class="col-md-4">
+              <div class="book-bg">
+                    <img src="images/book1.jpg" class="img-fluid" alt="Book 1">
+                    <h4 class="mt-3">Book Title 1</h4>
+                    <p class="text-muted">Category: Fiction</p>
+                    <p class="fw-bold">$9.99</p>
+                    <button class="btn btn-cart">
+                        <i class="fa-solid fa-cart-plus"></i> 
+                    </button>
+              </div>
+            </div>
+            <!-- Book 2 -->
+            <div class="col-md-4">
+                <div class="book-bg">
+                <img src="images/book2.jpg" class="img-fluid" alt="Book 2">
+                <h4 class="mt-3">Book Title 2</h4>
+                <p class="text-muted">Category: Self-Help</p>
+                <p class="fw-bold">$12.99</p>
+                <button class="btn btn-cart">
+                    <i class="fa-solid fa-cart-plus"></i> 
+                </button>
+                </div>
+            </div>
+            <!-- Book 3 -->
+            <div class="col-md-4">
+                    <div class="book-bg">
+                <img src="images/book3.jpg" class="img-fluid" alt="Book 3">
+                <h4 class="mt-3">Book Title 3</h4>
+                <p class="text-muted">Category: Mystery</p>
+                <p class="fw-bold">$8.99</p>
+                <button class="btn btn-cart">
+                    <i class="fa-solid fa-cart-plus"></i>
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Features Section -->
+<section id="features" class="p-5 text-center">
+    <div class="container">
+        <h2 class="mb-4">Features</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <i class="fa-solid fa-book-open-reader fa-3x mb-3"></i>
+                <h4>Wide Collection</h4>
+                <p>Browse through a wide variety of genres and topics.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa-solid fa-headphones fa-3x mb-3"></i>
+                <h4>Audiobooks</h4>
+                <p>Listen to your favorite books on the go.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa-solid fa-cloud-download fa-3x mb-3"></i>
+                <h4>Offline Reading</h4>
+                <p>Download and enjoy books anytime, anywhere.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section id="cta" class="text-white text-center p-5" style="background-color: #b70000;">
+    <div class="container">
+        <h2 class="mb-4">Ready to Start Your Adventure?</h2>
+        <p class="mb-4">Sign up now and gain access to thousands of eBooks and audiobooks.</p>
+        <a href="register.html" class="btn-anim">Join Now</a>
+    </div>
+</section>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Initialize the Lottie animation
+        lottie.loadAnimation({
+            container: document.getElementById('lottie-container'), // The container for the animation
+            renderer: 'svg', // Render type (svg, canvas, or html)
+            loop: true, // Loop the animation
+            autoplay: true, // Play automatically
+            path: 'images/book.json', // Path to the Lottie JSON file
+        });
+    });
+
+</script>

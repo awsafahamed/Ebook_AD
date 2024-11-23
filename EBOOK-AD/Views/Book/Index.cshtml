@@ -1,35 +1,63 @@
-﻿@model IEnumerable<EBOOK_AD.Models.Book>
+﻿@model List<Book>
 
 @{
-    ViewData["Title"] = "Books";
+    Layout = "~/Views/Admin/_AdminLayout.cshtml";
+    ViewData["Title"] = "Manage Books";
 }
 
-<h2>@ViewData["Title"]</h2>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>Title</th>
-            <th>Author</th>
-            <th>Price</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var book in Model)
-        {
+<div class="container mt-4">
+    <h2 class="mb-4">Manage Books</h2>
+    <a href="@Url.Action("Create", "Book")" class="btn btn-primary mb-3">Add New Book</a>
+    <table class="table table-bordered table-striped">
+        <thead>
             <tr>
-                <td>@book.Title</td>
-                <td>@book.Author</td>
-                <td>@book.Price</td>
-                <td>
-                    <a href="@Url.Action("Details", "Book", new { id = book.BookId })">Details</a> |
-                    <a href="@Url.Action("Edit", "Book", new { id = book.BookId })">Edit</a> |
-                    <a href="@Url.Action("Delete", "Book", new { id = book.BookId })">Delete</a>
-                </td>
+                <th>ID</th>
+                <th>Image</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Stock</th>
+                <th>Price</th>
+                <th>Actions</th>
             </tr>
-        }
-    </tbody>
-</table>
-
-<a href="@Url.Action("Create", "Book")" class="btn btn-primary">Add New Book</a>
+        </thead>
+        <tbody>
+            @foreach (var book in Model)
+            {
+                <tr>
+                    <td>@book.BookId</td>
+                    <td>
+                        @if (!string.IsNullOrEmpty(book.ImageUrl))
+                        {
+                            <img src="@book.ImageUrl" alt="@book.Title" style="width: 60px; height: auto; border-radius: 5px;" />
+                        }
+                        else
+                        {
+                            <span>No Image</span>
+                        }
+                    </td>
+                    <td>@book.Title</td>
+                    <td>@book.Author</td>
+                    <td>@book.Category</td>
+                    <td>@book.Description</td>
+                    <td>@book.Stock</td>
+                    <td>@book.Price</td>
+                    <td class="text-center">
+                        <div class="btn-group">
+                            <button class="btn btn-dark dropdown-toggle btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Action <i class="mdi mdi-chevron-down"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                                <li><a class="dropdown-item" href="@Url.Action("Edit", "Book", new { id = book.BookId })">Edit</a></li>
+                                <form id="deleteForm" method="post" asp-controller="Book" asp-action="DeleteConfirmed">
+                                    <input type="hidden" id="bookId" name="bookId" value="@book.BookId" />
+                                    <button type="submit" class="btn btn-danger">Yes, Delete</button>
+                                </form>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

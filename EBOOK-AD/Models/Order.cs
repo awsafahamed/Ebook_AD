@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace EBOOK_AD.Models
 {
@@ -19,6 +21,10 @@ namespace EBOOK_AD.Models
         [Required]
         [StringLength(50)]
         public string Status { get; set; } // Pending, Completed, Cancelled
+
+        [Required]
+        [StringLength(200)]
+        public string ShippingAddress { get; set; }
 
         public virtual List<OrderItem> OrderItems { get; set; }
     }

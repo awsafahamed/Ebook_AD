@@ -1,0 +1,61 @@
+﻿@model EBOOK_AD.Models.Book
+
+@{
+    Layout = "~/Views/Admin/_AdminLayout.cshtml";
+    ViewData["Title"] = "Add New Book";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">Add New Book</h2>
+
+    <!-- Form with enctype for file uploads -->
+    <form asp-action="Create" method="post" enctype="multipart/form-data">
+        @Html.AntiForgeryToken()
+
+        <div class="form-group mb-3">
+            <label asp-for="Title" class="form-label"></label>
+            <input asp-for="Title" class="form-control" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Category" class="form-label"></label>
+            <input asp-for="Category" class="form-control" />
+            <span asp-validation-for="Category" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Author" class="form-label"></label>
+            <input asp-for="Author" class="form-control" />
+            <span asp-validation-for="Author" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Price" class="form-label"></label>
+            <input asp-for="Price" type="number" step="0.01" class="form-control" />
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Stock" class="form-label"></label>
+            <input asp-for="Stock" type="number" class="form-control" />
+            <span asp-validation-for="Stock" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Description" class="form-label"></label>
+            <textarea asp-for="Description" rows="5" class="form-control"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <!-- File upload field -->
+        <div class="form-group mb-3">
+            <label for="ImageFile" class="form-label">Upload Book Image</label>
+            <input type="file" id="ImageFile" name="ImageFile" class="form-control" accept="image/*" />
+            <div class="form-text text-muted">Supported formats: JPEG, PNG. Max size: 2 MB.</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add Book</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>

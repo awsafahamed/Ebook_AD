@@ -1,0 +1,89 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Admin/_AdminLayout.cshtml";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">Admin Overview</h2>
+
+    <!-- Overview Cards -->
+    <div class="row">
+        <!-- Total Books -->
+        <div class="col-md-4">
+            <div class="card text-white card-overview mb-3">
+                <div class="card-header">Total Books</div>
+                <div class="card-body">
+                    <h5 class="card-title">@ViewData["TotalBooks"]</h5>
+                    <p class="card-text">The total number of books available in the system.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Total Users -->
+        <div class="col-md-4">
+            <div class="card text-white card-overview mb-3">
+                <div class="card-header">Total Users</div>
+                <div class="card-body">
+                    <h5 class="card-title">@ViewData["TotalUsers"]</h5>
+                    <p class="card-text">The number of registered users in the system.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Total Orders -->
+        <div class="col-md-4">
+            <div class="card text-white card-overview mb-3">
+                <div class="card-header">Total Orders</div>
+                <div class="card-body">
+                    <h5 class="card-title">@ViewData["TotalOrders"]</h5>
+                    <p class="card-text">The total number of orders placed so far.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Feedback Table -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <h3>Recent Feedback</h3>
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>Book ID</th>
+                        <th>Comment</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>22</td>
+                        <td>Great book, very insightful!</td>
+                        <td>2024-11-22</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>45</td>
+                        <td>Enjoyed reading this classic.</td>
+                        <td>2024-11-21</td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>38</td>
+                        <td>Could be better; printing quality was low.</td>
+                        <td>2024-11-20</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card-overview{
+        background: #b70000;
+        border-radius: 20px;
+        color: #fff;
+    }
+</style>

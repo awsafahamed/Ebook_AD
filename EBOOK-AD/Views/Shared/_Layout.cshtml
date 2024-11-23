@@ -12,24 +12,59 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light box-shadow">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">EBOOK_AD</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Brand Logo -->
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="images/logo.png" alt="Alternate Text" height="40" />
+                </a>
+
+                <!-- Toggler Button for Mobile View -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+
+                <!-- Navbar Links and Features -->
+                <div class="navbar-collapse collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Home Link -->
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
+
+                        <!-- About Link -->
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Books">Books</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">About</a>
                         </li>
+
+                        <!-- Book Link -->
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Books">Book</a>
                         </li>
+
+                        <!-- Contact Link -->
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
+                        </li>
+
+                     
+
+                        <!-- Search Bar -->
+                        <li class="nav-item d-flex align-items-center">
+                            <form class="d-flex" action="/search" method="get">
+                                <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search" name="query">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </li>
+
+                        <!-- Cart Link -->
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="/cart">
+                                <i class="fa-regular fa-cart-shopping"></i>
+                            </a>
+                        </li>
+
+                        <!-- Login Link -->
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Login">Login</a>
                         </li>
@@ -38,20 +73,130 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+
+    <div>
+        <main role="main" >
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - EBOOK_AD - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row footer-details">
+                <div class="col-md-4">
+                    <div class="address">
+                        <a href="index.html"><img src="images/logo.png" alt=""></a>
+                    </div>
+
+                   
+                    <br>
+                    <div class="social">
+
+                        <a href="">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-md-2">
+
+                    <a href="FAQ.html">
+                        <p data-aos="fade-up">FAQ</p>
+                    </a>
+                    <a href="">
+                        <p data-aos="fade-up">guide</p>
+                    </a>
+                    <a href="supportedplatforms.html">
+                        <p data-aos="fade-up">Supported Platforms</p>
+                    </a>
+
+                    <a href="">
+                        <p data-aos="fade-up">Events</p>
+                    </a>
+                    <a href="contact.html">
+                        <p data-aos="fade-up">Contact Help</p>
+                    </a>
+                    <a href="">
+                        <p data-aos="fade-up">Product Updates</p>
+                    </a>
+                   
+
+                </div>
+
+                <div class="col-md-3">
+                    <h5>User</h5>
+                    <a href="https://kommonpoll.com/app">
+                        <p data-aos="fade-up">App</p>
+                    </a>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="newsletter">
+                        <h5>Subscribe our Newsletter</h5><br>
+                        <p data-aos="fade-up">
+                            Stay ahead of the competition with valuable tips, case studies, and
+                            industry news delivered
+                            straight to your inbox.
+                        </p>
+                        <form action="">
+                            <input type="text" placeholder="Email Address">
+                            <button>
+                                <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                     height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                    <br> <br> <br>
+
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <p>
+                            Copyright © 2024 Kommon Poll™ a product of <a href="https://synapseailabs.com/"
+                                                                          style="color: #ffffff;">Synapse Artificial Intelligence Labs (Pvt) Ltd.</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="col">
+                                <a href="termsofuse.html">
+                                    <p>Terms of Use</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="refundpolicy.html">
+                                    <p>Refund Policy</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="privacypolicy.html">
+                                    <p>Privacy Policy</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <script src="https://kit.fontawesome.com/1619a626e1.js?ver=4.5.7" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-93sdlwiAO+QPYGsNNx1NNB64MntTuKLAnZ2T7ZtSO6z6RMyjlpUJk6Vw5kUQfSCM" crossorigin="anonymous"></script>
 
     @await RenderSectionAsync("Scripts", required: false)

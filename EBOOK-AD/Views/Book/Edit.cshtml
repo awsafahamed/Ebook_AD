@@ -1,0 +1,72 @@
+﻿@model EBOOK_AD.Models.Book
+
+@{
+    Layout = "~/Views/Admin/_AdminLayout.cshtml";
+    ViewData["Title"] = "Edit Book";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">Edit Book</h2>
+
+    <!-- Form with enctype for file uploads -->
+    <form asp-action="Edit" method="post" enctype="multipart/form-data">
+        @Html.AntiForgeryToken()
+
+        <input type="hidden" asp-for="BookId" />
+
+        <div class="form-group mb-3">
+            <label asp-for="Title" class="form-label"></label>
+            <input asp-for="Title" class="form-control" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Category" class="form-label"></label>
+            <input asp-for="Category" class="form-control" />
+            <span asp-validation-for="Category" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Author" class="form-label"></label>
+            <input asp-for="Author" class="form-control" />
+            <span asp-validation-for="Author" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Price" class="form-label"></label>
+            <input asp-for="Price" type="number" step="0.01" class="form-control" />
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Stock" class="form-label"></label>
+            <input asp-for="Stock" type="number" class="form-control" />
+            <span asp-validation-for="Stock" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Description" class="form-label"></label>
+            <textarea asp-for="Description" rows="5" class="form-control"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <!-- File upload field for updating image -->
+        <div class="form-group mb-3">
+            <label for="ImageFile" class="form-label">Upload New Book Image (Optional)</label>
+            <input type="file" id="ImageFile" name="ImageFile" class="form-control" accept="image/*" />
+            <div class="form-text text-muted">Supported formats: JPEG, PNG. Max size: 2 MB.</div>
+        </div>
+
+        <!-- Display the current image -->
+        @if (!string.IsNullOrEmpty(Model.ImageUrl))
+        {
+            <div class="mb-3">
+                <label class="form-label">Current Book Image</label>
+                <img src="@Model.ImageUrl" alt="Current Image" class="img-thumbnail" width="150" />
+            </div>
+        }
+
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>

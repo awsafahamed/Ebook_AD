@@ -2,8 +2,10 @@
 using EBOOK_AD.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.IO;
+using System.Threading.Tasks;
 
-namespace eBookWebApp.Controllers
+namespace EBOOK_AD.Controllers
 {
     public class BookController : Controller
     {
@@ -47,10 +49,21 @@ namespace eBookWebApp.Controllers
         // POST: Book/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Title, Author, Price, Description, StockQuantity")] Book book)
+        public async Task<IActionResult> Create([Bind("Title,Category,Author,Price,Stock,Description")] Book book, IFormFile ImageFile)
         {
+            ModelState.Remove("ImageUrl");
             if (ModelState.IsValid)
             {
+                if (ImageFile != null)
+                {
+                    var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", ImageFile.FileName);
+                    using (var stream = new FileStream(imagePath, FileMode.Create))
+                    {
+                        await ImageFile.CopyToAsync(stream);
+                    }
+                    book.ImageUrl = "/images/" + ImageFile.FileName; // Save the relative path
+                }
+
                 _context.Add(book);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -71,13 +84,14 @@ namespace eBookWebApp.Controllers
             {
                 return NotFound();
             }
+
             return View(book);
         }
 
         // POST: Book/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id, Title, Author, Price, Description, StockQuantity")] Book book)
+        public async Task<IActionResult> Edit(int id, [Bind("BookId,Title,Category,Author,Price,Stock,Description,ImageUrl")] Book book, IFormFile ImageFile)
         {
             if (id != book.BookId)
             {
@@ -88,12 +102,38 @@ namespace eBookWebApp.Controllers
             {
                 try
                 {
+                    if (ImageFile != null && ImageFile.Length > 0)
+                    {
+                        // Generate a unique file name for the new image
+                        var uniqueFileName = Path.GetRandomFileName() + Path.GetExtension(ImageFile.FileName);
+                        var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", uniqueFileName);
+
+                        // Save the new image
+                        using (var stream = new FileStream(uploadPath, FileMode.Create))
+                        {
+                            await ImageFile.CopyToAsync(stream);
+                        }
+
+                        // Set the new image URL
+                        book.ImageUrl = "/images/" + uniqueFileName;
+
+                        // Delete the old image if it exists
+                        if (!string.IsNullOrEmpty(book.ImageUrl))
+                        {
+                            var oldImagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", book.ImageUrl.TrimStart('/'));
+                            if (System.IO.File.Exists(oldImagePath))
+                            {
+                                System.IO.File.Delete(oldImagePath);
+                            }
+                        }
+                    }
+
                     _context.Update(book);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!_context.Books.Any(e => e.BookId == book.BookId))
+                    if (!BookExists(book.BookId))
                     {
                         return NotFound();
                     }
@@ -126,14 +166,27 @@ namespace eBookWebApp.Controllers
         }
 
         // POST: Book/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        [HttpPost]
+        public async Task<IActionResult> DeleteConfirmed(int bookId)
         {
-            var book = await _context.Books.FindAsync(id);
+            var book = await _context.Books.FindAsync(bookId);
+            if (book.ImageUrl != null)
+            {
+                var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", book.ImageUrl.TrimStart('/'));
+                if (System.IO.File.Exists(imagePath))
+                {
+                    System.IO.File.Delete(imagePath); // Delete the image from the server
+                }
+            }
+
             _context.Books.Remove(book);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
+        }
+
+        private bool BookExists(int id)
+        {
+            return _context.Books.Any(e => e.BookId == id);
         }
     }
 }

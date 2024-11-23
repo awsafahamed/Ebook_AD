@@ -2,6 +2,8 @@
 using EBOOK_AD.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace eBookWebApp.Controllers
 {
@@ -17,7 +19,8 @@ namespace eBookWebApp.Controllers
         // GET: Order
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Orders.Include(o => o.OrderItems).ToListAsync());
+            var orders = await _context.Orders.Include(o => o.OrderItems).ToListAsync();
+            return View(orders);
         }
 
         // GET: Order/Create
@@ -29,10 +32,11 @@ namespace eBookWebApp.Controllers
         // POST: Order/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CustomerId, TotalAmount, Status")] Order order)
+        public async Task<IActionResult> Create([Bind("UserId, TotalAmount, OrderDate, Status, ShippingAddress")] Order order)
         {
             if (ModelState.IsValid)
             {
+                order.OrderDate = DateTime.Now; // Set the current date for new orders
                 _context.Add(order);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -48,7 +52,7 @@ namespace eBookWebApp.Controllers
                 return NotFound();
             }
 
-            var order = await _context.Orders.FindAsync(id);
+            var order = await _context.Orders.Include(o => o.OrderItems).FirstOrDefaultAsync(o => o.OrderId == id);
             if (order == null)
             {
                 return NotFound();
@@ -59,7 +63,7 @@ namespace eBookWebApp.Controllers
         // POST: Order/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id, CustomerId, TotalAmount, Status")] Order order)
+        public async Task<IActionResult> Edit(int id, [Bind("OrderId, UserId, TotalAmount, OrderDate, Status, ShippingAddress")] Order order)
         {
             if (id != order.OrderId)
             {
@@ -75,7 +79,7 @@ namespace eBookWebApp.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!_context.Orders.Any(e => e.OrderId == order.OrderId))
+                    if (!OrderExists(order.OrderId))
                     {
                         return NotFound();
                     }
@@ -98,7 +102,8 @@ namespace eBookWebApp.Controllers
             }
 
             var order = await _context.Orders
-                .FirstOrDefaultAsync(m => m.OrderId == id);
+                .Include(o => o.OrderItems)
+                .FirstOrDefaultAsync(o => o.OrderId == id);
             if (order == null)
             {
                 return NotFound();
@@ -112,10 +117,21 @@ namespace eBookWebApp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var order = await _context.Orders.FindAsync(id);
-            _context.Orders.Remove(order);
-            await _context.SaveChangesAsync();
+            var order = await _context.Orders
+                .Include(o => o.OrderItems)
+                .FirstOrDefaultAsync(o => o.OrderId == id);
+            if (order != null)
+            {
+                _context.OrderItems.RemoveRange(order.OrderItems); // Remove associated items
+                _context.Orders.Remove(order);
+                await _context.SaveChangesAsync();
+            }
             return RedirectToAction(nameof(Index));
+        }
+
+        private bool OrderExists(int id)
+        {
+            return _context.Orders.Any(e => e.OrderId == id);
         }
     }
 }

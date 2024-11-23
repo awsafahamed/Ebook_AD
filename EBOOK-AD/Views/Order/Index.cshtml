@@ -1,0 +1,38 @@
+﻿@model IEnumerable<EBOOK_AD.Models.Order>
+
+@{
+    Layout = "~/Views/Admin/_AdminLayout.cshtml";
+    ViewData["Title"] = "Orders";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Order ID</th>
+            <th>User ID</th>
+            <th>Shipping Address</th>
+            <th>Total Amount</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+                <tr>
+                    <td>@order.OrderId</td>
+                    <td>@order.UserId</td>
+                 
+                    <td>@order.TotalAmount</td>
+                    <td>@order.Status</td>
+                    <td>
+                        <a href="@Url.Action("Details", "Order", new { id = order.OrderId })" class="btn btn-info">Details</a>
+                        <a href="@Url.Action("Edit", "Order", new { id = order.OrderId })" class="btn btn-warning">Edit</a>
+                        <a href="@Url.Action("Delete", "Order", new { id = order.OrderId })" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+        }
+    </tbody>
+</table>

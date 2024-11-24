@@ -56,54 +56,88 @@
     </div>
 </section>
 
+
 <section id="books" class="p-5 h-100 text-center">
     <div class="container">
         <h2 class="mb-4">Our Latest eBooks</h2>
-        <div class="row">
-            <!-- Book 1 -->
-            <div class="col-md-4">
-              <div class="book-bg">
-                    <img src="images/book1.jpg" class="img-fluid" alt="Book 1">
-                    <h4 class="mt-3">Book Title 1</h4>
-                    <p class="text-muted">Category: Fiction</p>
-                    <p class="fw-bold">$9.99</p>
-                    <button class="btn btn-cart">
-                        <i class="fa-solid fa-cart-plus"></i> 
-                    </button>
-              </div>
-            </div>
-            <!-- Book 2 -->
-            <div class="col-md-4">
-                <div class="book-bg">
-                <img src="images/book2.jpg" class="img-fluid" alt="Book 2">
-                <h4 class="mt-3">Book Title 2</h4>
-                <p class="text-muted">Category: Self-Help</p>
-                <p class="fw-bold">$12.99</p>
-                <button class="btn btn-cart">
-                    <i class="fa-solid fa-cart-plus"></i> 
-                </button>
+        <div class="row" id="book-container">
+            @foreach (var book in Model)
+            {
+                <div class="col-md-3 mb-4">
+                    <div class="card-book-main h-100">
+                        <div class="card-book mb-3">
+                            @if (!string.IsNullOrEmpty(book.ImageUrl))
+                            {
+                                <img src="@book.ImageUrl" alt="@book.Title" class="img-fluid" style="height: 200px; object-fit: cover;" />
+                            }
+                            else
+                            {
+                                <div class="d-flex align-items-center justify-content-center" style="height: 200px; background: #f8f9fa; color: #6c757d;">
+                                    <span>No Image</span>
+                                </div>
+                            }
+                        </div>
+                        <div class="card-content ">
+                            <h5 >@book.Title</h5>
+                            
+                            <p class="mb-1 ">Author: @book.Author</p>
+                        </div>
+                        <div class="card-price">
+                         
+                            <p class="mb-1 d">Rs.@book.Price</p>
+                            <a href="@Url.Action("Details", "Home", new { id = book.BookId })" class="btn-View">View Details</a>
+
+                            <a  class="btn btn-cart" asp-controller="Cart" asp-action="AddToCart" asp-route-bookId="@book.BookId" class="btn btn-primary">
+                                <i class="bi bi-bag"></i>  Add to Cart
+                            </a>
+                     
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <!-- Book 3 -->
-            <div class="col-md-4">
-                    <div class="book-bg">
-                <img src="images/book3.jpg" class="img-fluid" alt="Book 3">
-                <h4 class="mt-3">Book Title 3</h4>
-                <p class="text-muted">Category: Mystery</p>
-                <p class="fw-bold">$8.99</p>
-                <button class="btn btn-cart">
-                    <i class="fa-solid fa-cart-plus"></i>
-                </button>
-                </div>
-            </div>
+            }
         </div>
     </div>
 </section>
 
+<style>
+    .card-book{
+     
+        text-align:left;
+     
+   
+    }
 
+    .card-content {
+        text-align: left;
+        color: #000;
+        font-weight: 600;
+    }
 
+        .card-content h5{
+            font-size:16px;
+        }
 
-
+            .card-content p{
+              font-size:14px;
+            }
+    .card-price{
+        text-align:left;
+        color: #000;
+        font-weight: 600;
+    }
+    .btn-View{
+        font-size: 10px;
+        color: #000;
+        text-decoration: underline;
+        font-weight: 600;
+    }
+    .btn-cart{
+        background: #b70000;
+        color: #fff;
+        font-size: 10px;
+        margin-left: 10px;
+    }
+</style>
 <!-- Features Section -->
 <section id="features" class="p-5 text-center">
     <div class="container">

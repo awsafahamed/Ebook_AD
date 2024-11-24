@@ -112,6 +112,17 @@ html {
         padding-left: 20px;
     }
 
+.navbar .dropdown-menu {
+    min-width: 200px;
+}
+
+.navbar .dropdown-item {
+    font-size: 14px;
+}
+
+.navbar .rounded-circle {
+    object-fit: cover;
+}
 
 
 

@@ -85,6 +85,8 @@ namespace EBOOK_AD.Migrations
 
                     b.HasKey("CartId");
 
+                    b.HasIndex("BookId");
+
                     b.ToTable("Carts");
                 });
 
@@ -228,6 +230,27 @@ namespace EBOOK_AD.Migrations
                     b.HasKey("UserId");
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = 1,
+                            Email = "admin@example.com",
+                            Name = "Admin",
+                            Password = "admin123",
+                            Role = "Admin"
+                        });
+                });
+
+            modelBuilder.Entity("EBOOK_AD.Models.Cart", b =>
+                {
+                    b.HasOne("EBOOK_AD.Models.Book", "Book")
+                        .WithMany()
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Book");
                 });
 
             modelBuilder.Entity("EBOOK_AD.Models.OrderItem", b =>

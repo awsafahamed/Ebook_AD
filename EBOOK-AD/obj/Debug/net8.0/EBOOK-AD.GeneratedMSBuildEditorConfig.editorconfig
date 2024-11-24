@@ -26,10 +26,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\aaham\Desktop\E-book -AD\EBOOK-AD\EBOOK-AD
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/aaham/Desktop/E-book -AD/EBOOK-AD/EBOOK-AD/Views/Account/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/aaham/Desktop/E-book -AD/EBOOK-AD/EBOOK-AD/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -50,16 +46,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aaham/Desktop/E-book -AD/EBOOK-AD/EBOOK-AD/Views/Cart/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+[C:/Users/aaham/Desktop/E-book -AD/EBOOK-AD/EBOOK-AD/Views/Cart/ViewCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxWaWV3Q2FydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/aaham/Desktop/E-book -AD/EBOOK-AD/EBOOK-AD/Views/Feedback/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/aaham/Desktop/E-book -AD/EBOOK-AD/EBOOK-AD/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/aaham/Desktop/E-book -AD/EBOOK-AD/EBOOK-AD/Views/Home/Books.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCb29rcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aaham/Desktop/E-book -AD/EBOOK-AD/EBOOK-AD/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aaham/Desktop/E-book -AD/EBOOK-AD/EBOOK-AD/Views/Home/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/aaham/Desktop/E-book -AD/EBOOK-AD/EBOOK-AD/Views/Home/Index.cshtml]
@@ -80,6 +88,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/aaham/Desktop/E-book -AD/EBOOK-AD/EBOOK-AD/Views/Order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aaham/Desktop/E-book -AD/EBOOK-AD/EBOOK-AD/Views/Order/orderConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcb3JkZXJDb25maXJtYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/aaham/Desktop/E-book -AD/EBOOK-AD/EBOOK-AD/Views/Shared/Error.cshtml]

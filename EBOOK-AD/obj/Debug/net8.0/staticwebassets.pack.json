@@ -181,6 +181,10 @@
       "PackagePath": "staticwebassets\\EBOOK-AD.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
       "Id": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -193,16 +197,36 @@
       "PackagePath": "staticwebassets\\images\\about-us.png"
     },
     {
+      "Id": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\images\\about2.jpg",
+      "PackagePath": "staticwebassets\\images\\about2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\images\\about3.jpg",
+      "PackagePath": "staticwebassets\\images\\about3.jpg"
+    },
+    {
       "Id": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\images\\book.json",
       "PackagePath": "staticwebassets\\images\\book.json"
     },
     {
-      "Id": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\images\\images.jpeg",
-      "PackagePath": "staticwebassets\\images\\images.jpeg"
+      "Id": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\images\\images (1).jpeg",
+      "PackagePath": "staticwebassets\\images\\images (1).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\images\\images (3).jpeg",
+      "PackagePath": "staticwebassets\\images\\images (3).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\images\\images (4).jpeg",
+      "PackagePath": "staticwebassets\\images\\images (4).jpeg"
     },
     {
       "Id": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\images\\logo.png",
       "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\images\\rkmy-1593759272-240255-medium.jpeg",
+      "PackagePath": "staticwebassets\\images\\rkmy-1593759272-240255-medium.jpeg"
     },
     {
       "Id": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\js\\site.js",

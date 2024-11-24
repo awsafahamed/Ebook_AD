@@ -1,0 +1,31 @@
+﻿@model EBOOK_AD.Models.Book
+
+<section id="book-details" class="p-5">
+    <div class="container">
+        <h2 class="mb-4 text-center">@Model.Title</h2>
+        <div class="row">
+            <div class="col-md-4">
+                @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                {
+                    <img src="@Model.ImageUrl" alt="@Model.Title" class="img-fluid rounded" />
+                }
+                else
+                {
+                    <div class="d-flex align-items-center justify-content-center" style="height: 300px; background: #f8f9fa; color: #6c757d;">
+                        <span>No Image Available</span>
+                    </div>
+                }
+            </div>
+            <div class="col-md-8">
+                <p><strong>Author:</strong> @Model.Author</p>
+                <p><strong>Category:</strong> @Model.Category</p>
+                <p><strong>Description:</strong> @Model.Description</p>
+                <p><strong>Stock:</strong> @Model.Stock</p>
+                <p><strong>Price:</strong> $@Model.Price</p>
+                <div class="mt-4">
+                    <a href="#" class="btn btn-primary btn-lg">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

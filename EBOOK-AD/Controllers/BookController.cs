@@ -184,6 +184,14 @@ namespace EBOOK_AD.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        // API: GetBooks
+        [HttpGet]
+        public JsonResult GetBooks()
+        {
+            var books = _context.Books.ToList(); // Fetch all books from the database
+            return Json(books);
+        }
+
         private bool BookExists(int id)
         {
             return _context.Books.Any(e => e.BookId == id);

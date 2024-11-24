@@ -1,93 +1,87 @@
 ﻿using EBOOK_AD.Data;
 using EBOOK_AD.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
-namespace EBOOK_AD.Controllers
+public class CartController : Controller
 {
-    public class CartController : Controller
+    private readonly ApplicationDbContext _context;
+
+    public CartController(ApplicationDbContext context)
     {
-        private readonly ApplicationDbContext _context;
+        _context = context;
+    }
+  
 
-        public CartController(ApplicationDbContext context)
+    // Add a book to the cart
+    public async Task<IActionResult> AddToCart(int bookId, int quantity = 1)
+    {
+        var userId = GetLoggedInUserId(); // Replace with your authentication logic
+
+        if (userId == null)
         {
-            _context = context;
+            return RedirectToAction("Login", "Home"); // Redirect to login if not logged in
         }
 
-        // GET: Cart
-        public IActionResult Index(int userId)
+        // Check if the book already exists in the user's cart
+        var existingCartItem = await _context.Carts
+            .FirstOrDefaultAsync(c => c.BookId == bookId && c.UserId == userId);
+
+        if (existingCartItem != null)
         {
-            var cartItems = _context.Carts.Where(c => c.UserId == userId).ToList();
-            return View(cartItems);
+            existingCartItem.Quantity += quantity; // Update quantity
         }
-
-        // GET: Cart/AddToCart/{bookId}
-        public IActionResult AddToCart(int bookId, int userId)
+        else
         {
-            var cart = _context.Carts.FirstOrDefault(c => c.BookId == bookId && c.UserId == userId);
-
-            if (cart != null)
+            var cartItem = new Cart
             {
-                cart.Quantity += 1; // If book is already in the cart, increase quantity
-                _context.Update(cart);
-            }
-            else
-            {
-                var newCart = new Cart
-                {
-                    BookId = bookId,
-                    UserId = userId,
-                    Quantity = 1
-                };
-                _context.Add(newCart);
-            }
+                UserId = userId,
+                BookId = bookId,
+                Quantity = quantity
+            };
 
-            _context.SaveChanges();
-            return RedirectToAction("Index", new { userId = userId });
+            _context.Carts.Add(cartItem);
         }
 
-        // GET: Cart/RemoveFromCart/{cartId}
-        public IActionResult RemoveFromCart(int cartId, int userId)
+        await _context.SaveChangesAsync();
+        return RedirectToAction("Index", "Books"); // Redirect back to book list
+    }
+
+    // View the cart
+    public async Task<IActionResult> ViewCart()
+    {
+        var userId = GetLoggedInUserId(); // Replace with your authentication logic
+
+        if (userId == null)
         {
-            var cartItem = _context.Carts.FirstOrDefault(c => c.CartId == cartId);
-
-            if (cartItem != null)
-            {
-                _context.Carts.Remove(cartItem);
-                _context.SaveChanges();
-            }
-
-            return RedirectToAction("Index", new { userId = userId });
+            return RedirectToAction("Login", "Home");
         }
 
-        // GET: Cart/UpdateQuantity/{cartId}
-        public IActionResult UpdateQuantity(int cartId, int quantity, int userId)
+        var cartItems = await _context.Carts
+            .Include(c => c.Book)
+            .Where(c => c.UserId == userId)
+            .ToListAsync();
+
+        return View(cartItems);
+    }
+
+    // Remove item from cart
+    public async Task<IActionResult> RemoveFromCart(int cartId)
+    {
+        var cartItem = await _context.Carts.FindAsync(cartId);
+
+        if (cartItem != null)
         {
-            var cartItem = _context.Carts.FirstOrDefault(c => c.CartId == cartId);
-
-            if (cartItem != null && quantity > 0)
-            {
-                cartItem.Quantity = quantity;
-                _context.Update(cartItem);
-                _context.SaveChanges();
-            }
-
-            return RedirectToAction("Index", new { userId = userId });
+            _context.Carts.Remove(cartItem);
+            await _context.SaveChangesAsync();
         }
 
-        // POST: Cart/Checkout
-        [HttpPost]
-        public IActionResult Checkout(int userId)
-        {
-            var cartItems = _context.Carts.Where(c => c.UserId == userId).ToList();
+        return RedirectToAction("ViewCart");
+    }
 
-            // Implement checkout logic here: Update orders, reduce stock, etc.
-
-            // After checkout, clear the cart
-            _context.Carts.RemoveRange(cartItems);
-            _context.SaveChanges();
-
-            return RedirectToAction("Index", "Home"); // Redirect to homepage after checkout
-        }
+    private int GetLoggedInUserId()
+    {
+        // Replace with logic to get the logged-in user ID
+        return 1; // Placeholder
     }
 }

@@ -15,5 +15,7 @@ namespace EBOOK_AD.Models
 
         [Required]
         public int Quantity { get; set; }
+
+        public virtual Book Book { get; set; }
     }
 }

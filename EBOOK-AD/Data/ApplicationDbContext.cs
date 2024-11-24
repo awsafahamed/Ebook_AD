@@ -10,6 +10,7 @@ namespace EBOOK_AD.Data
         {
         }
 
+
         // DbSets for each model
         public DbSet<User> Users { get; set; }
         public DbSet<Book> Books { get; set; }
@@ -19,5 +20,27 @@ namespace EBOOK_AD.Data
         public DbSet<Feedback> Feedbacks { get; set; }
         public DbSet<Report> Reports { get; set; }
 
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<User>().HasData(
+                new User
+                {
+                    UserId = 1,
+                    Name = "Admin",
+                    Email = "admin@example.com",
+                    Password = "admin123", // Hash this in production
+                    Role = "Admin"
+                });
+        }
     }
+
 }
+
+
+
+
+
+

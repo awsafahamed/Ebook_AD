@@ -1,5 +1,7 @@
 using EBOOK_AD.Models;
+using EBOOK_AD.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 
 namespace EBOOK_AD.Controllers
@@ -7,39 +9,126 @@ namespace EBOOK_AD.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly ApplicationDbContext _context; // Inject ApplicationDbContext
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, ApplicationDbContext context)
         {
             _logger = logger;
+            _context = context; // Initialize the DbContext
         }
 
-        public IActionResult Index()
+        // GET: Home/Index
+        public async Task<IActionResult> Index()
+        {
+            // Fetch the latest books
+            var latestBooks = await _context.Books
+                .OrderByDescending(b => b.BookId) // Fetch the latest books by ID
+                .Take(6) // Limit to 6 most recent books
+                .ToListAsync();
+
+            return View(latestBooks); // Pass the books to the view
+        }
+
+        // GET: Home/About
+        public IActionResult About()
         {
             return View();
         }
 
+        // GET: Home/Login
         public IActionResult Login()
         {
             return View();
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login(LoginViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await _context.Users
+                    .FirstOrDefaultAsync(u => u.Email == model.Email && u.Password == model.Password);
+
+                if (user != null)
+                {
+                    if (user.Role == "Admin")
+                    {
+                        return RedirectToAction("Index", "Admin"); // Redirect to Admin Dashboard
+                    }
+                    else
+                    {
+                        return RedirectToAction("Index", "Home"); // Redirect to User Home
+                    }
+                }
+                ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+            }
+            return View(model);
+        }
+
+        // GET: Home/Register
         public IActionResult Register()
         {
             return View();
         }
 
-        public IActionResult Books()
+        // POST: Home/Register
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Register(RegisterViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = new User
+                {
+                    Name = model.Name,
+                    Email = model.Email,
+                    Password = model.Password, // Store hashed password in production
+                    Role = "User" // Default role
+                };
+
+                _context.Users.Add(user);
+                await _context.SaveChangesAsync();
+
+                return RedirectToAction("Login");
+            }
+            return View(model);
+        }
+
+        // GET: Home/Books
+        public async Task<IActionResult> Books()
+        {
+            // Fetch all books for the Books view
+            var allBooks = await _context.Books.ToListAsync();
+            return View(allBooks);
+        }
+
+        // GET: Home/Contact
+        public IActionResult Contact()
         {
             return View();
         }
 
-
-
-        public IActionResult Privacy()
+        // GET: Book/Details/5
+        public async Task<IActionResult> Details(int? id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var book = await _context.Books
+                .FirstOrDefaultAsync(b => b.BookId == id);
+
+            if (book == null)
+            {
+                return NotFound();
+            }
+
+            return View(book);
         }
 
+        // Handle errors
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

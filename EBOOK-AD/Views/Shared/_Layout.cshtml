@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - EBOOK_AD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/EBOOK_AD.styles.css" asp-append-version="true" />
@@ -16,7 +17,7 @@
             <div class="container">
                 <!-- Brand Logo -->
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                    <img src="images/logo.png" alt="Alternate Text" height="40" />
+                    <img src="/images/logo.png" alt="Alternate Text" height="40" />
                 </a>
 
                 <!-- Toggler Button for Mobile View -->
@@ -65,9 +66,29 @@
                         </li>
 
                         <!-- Login Link -->
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Login">Login</a>
+                        <li class="nav-item dropdown">
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="/images/avatar.png" alt="User Avatar" class="rounded-circle me-2" width="30" height="30" />
+                                    @User.Identity.Name
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                    <li><a class="dropdown-item" asp-area="" asp-controller="Customer" asp-action="ManageOrders">Manage Orders</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <form asp-area="" asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
+                                            <button type="submit" class="dropdown-item">Logout</button>
+                                        </form>
+                                    </li>
+                                </ul>
+                            }
+                            else
+                            {
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Login">Login</a>
+                            }
                         </li>
+
                     </ul>
                 </div>
             </div>
@@ -85,7 +106,7 @@
             <div class="row footer-details">
                 <div class="col-md-4">
                     <div class="address">
-                        <a href="index.html"><img src="images/logo.png" alt=""></a>
+                        <a href="index.html"><img src="/images/logo.png" alt=""></a>
                     </div>
 
                    
@@ -164,8 +185,8 @@
                 <div class="row">
                     <div class="col-md-9">
                         <p>
-                            Copyright © 2024 Kommon Poll™ a product of <a href="https://synapseailabs.com/"
-                                                                          style="color: #ffffff;">Synapse Artificial Intelligence Labs (Pvt) Ltd.</a>
+                            Copyright © 2024 a product of <a href="https://synapseailabs.com/"
+                                                                          style="color: #ffffff;">Book Hive(Pvt) Ltd.</a>
                         </p>
                     </div>
                     <div class="col-md-3">

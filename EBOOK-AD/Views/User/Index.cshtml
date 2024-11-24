@@ -1,6 +1,54 @@
-﻿@model IEnumerable<EBOOK_AD.Models.User>
-
+﻿@model IEnumerable<User>
 @{
     Layout = "~/Views/Admin/_AdminLayout.cshtml";
-    ViewData["Title"] = "Users";
+
 }
+<div class="container">
+    <h2>Manage Users</h2>
+
+    <form asp-action="AddUser" method="post" class="mb-4">
+        <div class="row">
+            <div class="col-md-3">
+                <input type="text" name="UserName" placeholder="User Name" class="form-control" required />
+            </div>
+            <div class="col-md-3">
+                <input type="email" name="Email" placeholder="Email" class="form-control" required />
+            </div>
+            <div class="col-md-3">
+                <select name="Role" class="form-control" required>
+                    <option value="Admin">Admin</option>
+                    <option value="User">User</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <button type="submit" class="btn btn-success">Add User</button>
+            </div>
+        </div>
+    </form>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>User Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.UserId</td>
+                    <td>@user.Name</td>
+                    <td>@user.Email</td>
+                    <td>@user.Role</td>
+                    <td>
+                        <a asp-action="DeleteUser" asp-route-id="@user.UserId" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

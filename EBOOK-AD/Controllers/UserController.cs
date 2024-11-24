@@ -17,7 +17,8 @@ namespace eBookWebApp.Controllers
         // GET: User
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Users.ToListAsync());
+            var users = await _context.Users.ToListAsync();
+            return View(users);
         }
 
         // GET: User/Register
@@ -33,10 +34,14 @@ namespace eBookWebApp.Controllers
         {
             if (ModelState.IsValid)
             {
+                // Hash password before saving (implement hashing in a real-world app)
+                user.Role = "User"; // Assign default role
                 _context.Add(user);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
+            // Return view with validation errors
             return View(user);
         }
 
@@ -45,25 +50,26 @@ namespace eBookWebApp.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                return BadRequest("User ID is required.");
             }
 
             var user = await _context.Users.FindAsync(id);
             if (user == null)
             {
-                return NotFound();
+                return NotFound("User not found.");
             }
+
             return View(user);
         }
 
         // POST: User/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id, Username, Email, Password")] User user)
+        public async Task<IActionResult> Edit(int id, [Bind("UserId, Username, Email, Password, Role")] User user)
         {
             if (id != user.UserId)
             {
-                return NotFound();
+                return BadRequest("User ID mismatch.");
             }
 
             if (ModelState.IsValid)
@@ -75,17 +81,20 @@ namespace eBookWebApp.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!_context.Users.Any(e => e.UserId == user.UserId))
+                    if (!UserExists(user.UserId))
                     {
-                        return NotFound();
+                        return NotFound("User not found during update.");
                     }
                     else
                     {
                         throw;
                     }
                 }
+
                 return RedirectToAction(nameof(Index));
             }
+
+            // Return view with validation errors
             return View(user);
         }
 
@@ -94,14 +103,15 @@ namespace eBookWebApp.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                return BadRequest("User ID is required.");
             }
 
             var user = await _context.Users
-                .FirstOrDefaultAsync(m => m.UserId == id);
+                .FirstOrDefaultAsync(u => u.UserId == id);
+
             if (user == null)
             {
-                return NotFound();
+                return NotFound("User not found.");
             }
 
             return View(user);
@@ -113,9 +123,20 @@ namespace eBookWebApp.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var user = await _context.Users.FindAsync(id);
+            if (user == null)
+            {
+                return NotFound("User not found during deletion.");
+            }
+
             _context.Users.Remove(user);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
+        }
+
+        // Utility method to check if a user exists by ID
+        private bool UserExists(int id)
+        {
+            return _context.Users.Any(e => e.UserId == id);
         }
     }
 }

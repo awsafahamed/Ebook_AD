@@ -47,6 +47,22 @@ public class CartController : Controller
         return RedirectToAction("Index", "Books"); // Redirect back to book list
     }
 
+    public async Task<IActionResult> GetCartItemCount()
+    {
+        var userId = GetLoggedInUserId(); // Replace with your authentication logic
+
+        if (userId == null)
+        {
+            return Json(new { itemCount = 0 });
+        }
+
+        var totalItemsInCart = await _context.Carts
+                                            .Where(c => c.UserId == userId)
+                                            .SumAsync(c => c.Quantity);
+
+        return Json(new { itemCount = totalItemsInCart });
+    }
+
     // View the cart
     public async Task<IActionResult> ViewCart()
     {
@@ -64,6 +80,8 @@ public class CartController : Controller
 
         return View(cartItems);
     }
+
+
 
     // Remove item from cart
     public async Task<IActionResult> RemoveFromCart(int cartId)

@@ -24,25 +24,71 @@ namespace eBookWebApp.Controllers
             return View(orders);
         }
 
-        // GET: Order/Create
-        public IActionResult Create()
+        // GET: Checkout
+        public IActionResult Checkout()
         {
-            return View();
+            // Example: Get current user's cart (this should ideally be stored in a session or a database)
+            // Here, we retrieve the cart for the currently logged-in user.
+            var userId = 1; // For example, replace this with actual logged-in user ID using: User.Identity.Name
+            var cartItems = _context.OrderItems
+                .Include(oi => oi.Order) // Ensure that we include the order
+                .Where(oi => oi.Order.UserId == userId && oi.Order.Status == "Pending")
+                .ToList();
+
+            var totalAmount = cartItems.Sum(item => item.Price * item.Quantity);
+
+            var model = new CheckoutViewModel
+            {
+                OrderItems = cartItems,
+                TotalAmount = totalAmount,
+                UserId = userId // Ideally, replace with actual logged-in user ID
+            };
+
+            return View(model);
         }
 
-        // POST: Order/Create
+        // POST: Checkout
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("UserId, TotalAmount, OrderDate, Status, ShippingAddress")] Order order)
+        public IActionResult Checkout(CheckoutViewModel model)
         {
             if (ModelState.IsValid)
             {
-                order.OrderDate = DateTime.Now; // Set the current date for new orders
-                _context.Add(order);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                // Create a new Order
+                var order = new Order
+                {
+                    UserId = model.UserId,
+                    TotalAmount = model.TotalAmount,
+                    OrderDate = DateTime.Now,
+                    Status = "Pending",
+                    ShippingAddress = model.ShippingAddress
+                };
+
+                _context.Orders.Add(order);
+                _context.SaveChanges(); // Save the order first to get the OrderId
+
+                // Add OrderItems to the new order
+                foreach (var item in model.OrderItems)
+                {
+                    var orderItem = new OrderItem
+                    {
+                        OrderId = order.OrderId,
+                        BookId = item.BookId,
+                        Quantity = item.Quantity,
+                        Price = item.Price
+                    };
+
+                    _context.OrderItems.Add(orderItem);
+                }
+
+                _context.SaveChanges(); // Save the order items
+
+                // Redirect to a confirmation page or the order summary page
+                return RedirectToAction("OrderConfirmation", new { id = order.OrderId });
             }
-            return View(order);
+
+            // If model is invalid, redisplay the checkout page
+            return View(model);
         }
 
         // GET: Order/Edit/5

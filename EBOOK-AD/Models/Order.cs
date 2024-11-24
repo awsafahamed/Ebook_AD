@@ -26,6 +26,7 @@ namespace EBOOK_AD.Models
         [StringLength(200)]
         public string ShippingAddress { get; set; }
 
+        // Navigation property
         public virtual List<OrderItem> OrderItems { get; set; }
     }
 
@@ -35,7 +36,7 @@ namespace EBOOK_AD.Models
         public int OrderItemId { get; set; }
 
         [Required]
-        public int OrderId { get; set; }
+        public int OrderId { get; set; }  // Foreign Key
 
         [Required]
         public int BookId { get; set; }
@@ -45,5 +46,8 @@ namespace EBOOK_AD.Models
 
         [Required]
         public decimal Price { get; set; }
+
+        // Navigation property to related Order
+        public virtual Order Order { get; set; }
     }
 }

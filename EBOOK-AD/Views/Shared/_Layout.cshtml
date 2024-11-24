@@ -58,13 +58,16 @@
                             </form>
                         </li>
 
-                        <!-- Cart Link -->
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="/cart">
-                                <i class="fa-regular fa-cart-shopping"></i>
+                            <a class="nav-link text-dark position-relative" asp-area="" asp-controller="Cart" asp-action="ViewCart">
+                                <i class="bi bi-bag"></i>
+                                <!-- Badge for Cart Items (Dynamic) -->
+                                <span id="cart-item-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    0 <!-- Default value -->
+                                </span>
                             </a>
                         </li>
-
+                        
                         <!-- Login Link -->
                         <li class="nav-item dropdown">
                             @if (User.Identity.IsAuthenticated)
@@ -101,6 +104,19 @@
         </main>
     </div>
 
+
+    <script>
+        // Fetch the total number of items in the cart and update the badge dynamically
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('/Cart/GetCartItemCount') // Fetch the cart item count from the server
+                .then(response => response.json())
+                .then(data => {
+                    // Update the cart badge with the item count
+                    document.getElementById('cart-item-count').textContent = data.itemCount;
+                })
+                .catch(error => console.error('Error fetching cart item count:', error));
+        });
+    </script>
     <footer id="footer">
         <div class="container-fluid">
             <div class="row footer-details">

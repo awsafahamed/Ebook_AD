@@ -68,11 +68,12 @@
     <section class="vh-100">
         <div class="h-100">
             <div class="row h-100">
+                <!-- Login Form Column -->
                 <div class="col-sm-6 text-black d-flex align-items-center justify-content-center">
                     <div class="w-100" style="max-width: 500px;">
                         <!-- Ensures form does not stretch too wide on larger screens -->
                         <div class="logo px-5 mb-5">
-                            <a href="index.html"><img src="./assets/images/logo.png" alt="" class="img-fluid"></a>
+                            <a><img src="/images/logo.png" alt="Logo" class="img-fluid"></a>
                         </div>
                         <form asp-action="Login" method="post">
                             <div class="form-group">
@@ -85,17 +86,25 @@
                                 <input asp-for="Password" type="password" class="form-control" />
                                 <span asp-validation-for="Password" class="text-danger"></span>
                             </div>
-                            <button type="submit" class="btn btn-primary">Login</button>
+                            <button type="submit" class="btn btn-primary w-100">Login</button>
                         </form>
+                        <!-- Links for Forgot Password and Register -->
+                        <div class="text-center mt-3">
+                            <a href="/Home/ForgotPassword" class="text-decoration-none">Forgot Password?</a>
+                        </div>
+                        <div class="text-center mt-2">
+                            <span>Don't have an account?</span>
+                            <a href="/Home/Register" class="text-decoration-none">Register</a>
+                        </div>
                     </div>
                 </div>
+                <!-- Background Image Column -->
                 <div class="col-sm-6 px-0 d-none d-sm-block bg-login">
-                    <!-- Background Image Column -->
+                    <!-- Background Image or Additional Content -->
                 </div>
             </div>
         </div>
     </section>
-
 
     
 

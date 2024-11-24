@@ -87,9 +87,10 @@
                             <p class="mb-1 d">Rs.@book.Price</p>
                             <a href="@Url.Action("Details", "Home", new { id = book.BookId })" class="btn-View">View Details</a>
 
-                            <a  class="btn btn-cart" asp-controller="Cart" asp-action="AddToCart" asp-route-bookId="@book.BookId" class="btn btn-primary">
-                                <i class="bi bi-bag"></i>  Add to Cart
+                            <a class="btn btn-cart" asp-controller="Cart" asp-action="AddToCart" asp-route-bookId="@book.BookId" class="btn btn-primary">
+                                <i class="bi bi-bag"></i> Add to Cart
                             </a>
+
                      
                         </div>
                     </div>

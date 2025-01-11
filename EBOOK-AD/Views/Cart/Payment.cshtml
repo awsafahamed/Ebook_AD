@@ -1,0 +1,24 @@
+﻿@model EBOOK_AD.Models.CheckoutViewModel
+
+@{
+    ViewData["Title"] = "Payment";
+}
+
+<h2>Payment</h2>
+
+<form method="post" asp-action="PlaceOrder">
+    <div class="form-group">
+        <label for="PaymentMethod">Payment Method</label>
+        <select id="PaymentMethod" name="PaymentMethod" class="form-control" required>
+            <option value="Card">Card</option>
+            <option value="CashOnDelivery">Cash on Delivery</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Total Amount</label>
+        <p>@Model.TotalAmount.ToString("C")</p>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Place Order</button>
+</form>

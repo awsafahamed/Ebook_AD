@@ -19,6 +19,11 @@ namespace EBOOK_AD.Controllers
         // GET: Book
         public async Task<IActionResult> Index()
         {
+            // Count the total number of books, users, and orders
+            ViewData["TotalBooks"] = await _context.Books.CountAsync();
+            ViewData["TotalUsers"] = await _context.Users.CountAsync(); // Assuming the Users table exists
+            ViewData["TotalOrders"] = await _context.Orders.CountAsync(); // Assuming the Orders table exists
+
             return View(await _context.Books.ToListAsync());
         }
 
@@ -52,6 +57,7 @@ namespace EBOOK_AD.Controllers
         public async Task<IActionResult> Create([Bind("Title,Category,Author,Price,Stock,Description")] Book book, IFormFile ImageFile)
         {
             ModelState.Remove("ImageUrl");
+
             if (ModelState.IsValid)
             {
                 if (ImageFile != null)
@@ -123,9 +129,15 @@ namespace EBOOK_AD.Controllers
                             var oldImagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", book.ImageUrl.TrimStart('/'));
                             if (System.IO.File.Exists(oldImagePath))
                             {
-                                System.IO.File.Delete(oldImagePath);
+                                System.IO.File.Delete(oldImagePath); // Delete the old image from the server
                             }
                         }
+                    }
+                    else
+                    {
+                        // If no new image is uploaded, retain the old one
+                        var existingBook = await _context.Books.AsNoTracking().FirstOrDefaultAsync(b => b.BookId == book.BookId);
+                        book.ImageUrl = existingBook?.ImageUrl;
                     }
 
                     _context.Update(book);

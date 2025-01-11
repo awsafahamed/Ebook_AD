@@ -45,7 +45,7 @@
                         }
                         else
                         {
-                            <div class="d-flex align-items-center justify-content-center" style="height: 200px; background: #f8f9fa;">
+                            <div class="d-flex align-items-center justify-content-center" style="height: 400px; background: #f8f9fa;">
                                 <span>No Image</span>
                             </div>
                         }
@@ -59,7 +59,13 @@
                         
                         <p class="mb-1">Price: Rs.@book.Price</p>
                         <a href="@Url.Action("Details", "Home", new { id = book.BookId })" class="btn btn-outline-secondary btn-sm">View Details</a>
-                        <a href="#" class="btn btn-primary btn-sm">Add to Cart</a>
+                        <a class="btn btn-primary btn-cart"
+                           data-book-id="@book.BookId"
+                           data-quantity="1">
+                            <i class="bi bi-bag"></i> Add to Cart
+                        </a>
+
+
                     </div>
                 </div>
             </div>
@@ -87,6 +93,47 @@
             }
         });
     }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // Add click event listener to all Add to Cart buttons
+        document.querySelectorAll(".btn-cart").forEach(function (button) {
+            button.addEventListener("click", function (e) {
+                e.preventDefault(); // Prevent the default action
+
+                // Get book ID and quantity
+                const bookId = this.getAttribute("data-book-id");
+                const quantity = this.getAttribute("data-quantity");
+
+                // Send AJAX request
+                fetch(`/Cart/AddToCart?bookId=${bookId}&quantity=${quantity}`, {
+                    method: "POST",
+                    headers: {
+                        "X-Requested-With": "XMLHttpRequest",
+                        "Content-Type": "application/json",
+                    },
+                })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error("Network response was not ok");
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        if (data.success) {
+                            alert("Item added to cart!");
+                            // Optionally, update cart UI here
+                        } else {
+                            alert("Failed to add item to cart.");
+                        }
+                    })
+                    .catch(error => {
+                        console.error("There was a problem with the fetch operation:", error);
+                        alert("An error occurred. Please try again.");
+                    });
+            });
+        });
+    });
+
 </script>
 
 <style>

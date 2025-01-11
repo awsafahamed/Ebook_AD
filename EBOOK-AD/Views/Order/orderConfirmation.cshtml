@@ -1,32 +1,14 @@
-﻿@model EBOOK_AD.Models.Order
-
-@{
-    ViewData["Title"] = "Order Confirmation";
+﻿@{
+    var orderPlacedMessage = TempData["OrderPlacedMessage"] as string;
 }
 
-<h1>Order Confirmation</h1>
+@if (!string.IsNullOrEmpty(orderPlacedMessage))
+{
+    <div class="alert alert-success">
+        @orderPlacedMessage
+    </div>
+}
 
-<p>Thank you for your order! Your order has been successfully placed.</p>
-
-<div>
-    <h2>Order Details:</h2>
-    <p><strong>Order ID:</strong> @Model.OrderId</p>
-    <p><strong>Order Date:</strong> @Model.OrderDate.ToString("yyyy-MM-dd HH:mm")</p>
-    <p><strong>Status:</strong> @Model.Status</p>
-    <p><strong>Total Amount:</strong> $@Model.TotalAmount</p>
-    <p><strong>Shipping Address:</strong> @Model.ShippingAddress</p>
-</div>
-
-<h3>Order Items:</h3>
-<ul>
-    @foreach (var item in Model.OrderItems)
-    {
-        <li>
-            <strong>@item.Quantity</strong> x @item.BookId (Book ID) - Price: $@item.Price
-        </li>
-    }
-</ul>
-
-<p>If you have any questions about your order, feel free to contact our support team.</p>
-
-<a href="@Url.Action("Index", "Home")">Return to Home Page</a>
+<h2>Your Order Details</h2>
+<p>Total: @ViewBag.OrderTotal</p>
+<!-- Display more order details here as needed -->

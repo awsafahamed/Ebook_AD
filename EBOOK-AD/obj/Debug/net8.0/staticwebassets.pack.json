@@ -193,6 +193,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\images\\13265059.jpg",
+      "PackagePath": "staticwebassets\\images\\13265059.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\images\\9780698305434-us.jpg",
+      "PackagePath": "staticwebassets\\images\\9780698305434-us.jpg"
+    },
+    {
+      "Id": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\images\\Harry_Potter_and_the_Chamber_of_Secrets.jpg",
+      "PackagePath": "staticwebassets\\images\\Harry_Potter_and_the_Chamber_of_Secrets.jpg"
+    },
+    {
       "Id": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\images\\about-us.png",
       "PackagePath": "staticwebassets\\images\\about-us.png"
     },
@@ -219,6 +231,10 @@
     {
       "Id": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\images\\images (4).jpeg",
       "PackagePath": "staticwebassets\\images\\images (4).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\images\\images.jpg",
+      "PackagePath": "staticwebassets\\images\\images.jpg"
     },
     {
       "Id": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\images\\logo.png",

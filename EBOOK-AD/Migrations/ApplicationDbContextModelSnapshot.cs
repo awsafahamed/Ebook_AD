@@ -125,8 +125,16 @@ namespace EBOOK_AD.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderId"));
 
+                    b.Property<DateTime?>("DeliveryDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("PaymentStatus")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("ShippingAddress")
                         .IsRequired()
@@ -170,6 +178,8 @@ namespace EBOOK_AD.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("OrderItemId");
+
+                    b.HasIndex("BookId");
 
                     b.HasIndex("OrderId");
 
@@ -255,11 +265,21 @@ namespace EBOOK_AD.Migrations
 
             modelBuilder.Entity("EBOOK_AD.Models.OrderItem", b =>
                 {
-                    b.HasOne("EBOOK_AD.Models.Order", null)
+                    b.HasOne("EBOOK_AD.Models.Book", "Book")
+                        .WithMany()
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EBOOK_AD.Models.Order", "Order")
                         .WithMany("OrderItems")
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Book");
+
+                    b.Navigation("Order");
                 });
 
             modelBuilder.Entity("EBOOK_AD.Models.Order", b =>

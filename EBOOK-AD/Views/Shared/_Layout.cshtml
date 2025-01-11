@@ -17,7 +17,7 @@
             <div class="container">
                 <!-- Brand Logo -->
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                    <img src="/images/logo.png" alt="Alternate Text" height="40" />
+                    <img src="/images/logo.png" alt="Alternate Text" height="60" />
                 </a>
 
                 <!-- Toggler Button for Mobile View -->
@@ -40,7 +40,7 @@
 
                         <!-- Book Link -->
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Books">Book</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Books">Books</a>
                         </li>
 
                         <!-- Contact Link -->
@@ -48,7 +48,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
                         </li>
 
-                     
+
 
                         <!-- Search Bar -->
                         <li class="nav-item d-flex align-items-center">
@@ -62,25 +62,24 @@
                             <a class="nav-link text-dark position-relative" asp-area="" asp-controller="Cart" asp-action="ViewCart">
                                 <i class="bi bi-bag"></i>
                                 <!-- Badge for Cart Items (Dynamic) -->
-                                <span id="cart-item-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                <span id="cart-item-count" class="position-absolute top-0 translate-middle badge rounded-pill bg-danger">
                                     0 <!-- Default value -->
                                 </span>
                             </a>
                         </li>
-                        
+
                         <!-- Login Link -->
                         <li class="nav-item dropdown">
                             @if (User.Identity.IsAuthenticated)
                             {
                                 <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="/images/avatar.png" alt="User Avatar" class="rounded-circle me-2" width="30" height="30" />
                                     @User.Identity.Name
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
                                     <li><a class="dropdown-item" asp-area="" asp-controller="Customer" asp-action="ManageOrders">Manage Orders</a></li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li>
-                                        <form asp-area="" asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
+                                        <form asp-area="" asp-controller="Home" asp-action="Logout" method="post" class="d-inline">
                                             <button type="submit" class="dropdown-item">Logout</button>
                                         </form>
                                     </li>
@@ -99,7 +98,7 @@
     </header>
 
     <div>
-        <main role="main" >
+        <main role="main">
             @RenderBody()
         </main>
     </div>
@@ -122,78 +121,50 @@
             <div class="row footer-details">
                 <div class="col-md-4">
                     <div class="address">
-                        <a href="index.html"><img src="/images/logo.png" alt=""></a>
+                        <a href="index.html"><img src="/images/logo.png" alt="BookHive Logo"></a>
                     </div>
-
-                   
                     <br>
                     <div class="social">
-
-                        <a href="">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
+
                 <div class="col-md-2">
-
-                    <a href="FAQ.html">
-                        <p data-aos="fade-up">FAQ</p>
-                    </a>
-                    <a href="">
-                        <p data-aos="fade-up">guide</p>
-                    </a>
-                    <a href="supportedplatforms.html">
-                        <p data-aos="fade-up">Supported Platforms</p>
-                    </a>
-
-                    <a href="">
-                        <p data-aos="fade-up">Events</p>
-                    </a>
-                    <a href="contact.html">
-                        <p data-aos="fade-up">Contact Help</p>
-                    </a>
-                    <a href="">
-                        <p data-aos="fade-up">Product Updates</p>
-                    </a>
-                   
-
+                    <h5>Quick Links</h5>
+                    <a href="FAQ.html"><p data-aos="fade-up">FAQ</p></a>
+                    <a href=""><p data-aos="fade-up">Shopping Guide</p></a>
+                    <a href="supportedplatforms.html"><p data-aos="fade-up">Supported Devices</p></a>
+                    <a href=""><p data-aos="fade-up">Upcoming Events</p></a>
+                    <a href="contact.html"><p data-aos="fade-up">Contact Support</p></a>
+                    <a href=""><p data-aos="fade-up">Latest Releases</p></a>
                 </div>
 
                 <div class="col-md-3">
-                    <h5>User</h5>
-                    <a href="https://kommonpoll.com/app">
-                        <p data-aos="fade-up">App</p>
-                    </a>
+                    <h5>Customer Area</h5>
+                    <a href="user-account.html"><p data-aos="fade-up">My Account</p></a>
+                    <a href="wishlist.html"><p data-aos="fade-up">Wishlist</p></a>
+                    <a href="order-history.html"><p data-aos="fade-up">Order History</p></a>
                 </div>
 
                 <div class="col-md-3">
                     <div class="newsletter">
-                        <h5>Subscribe our Newsletter</h5><br>
+                        <h5>Subscribe to Our Newsletter</h5><br>
                         <p data-aos="fade-up">
-                            Stay ahead of the competition with valuable tips, case studies, and
-                            industry news delivered
-                            straight to your inbox.
+                            Get the latest updates on new arrivals, best sellers, and exclusive offers!
                         </p>
                         <form action="">
-                            <input type="text" placeholder="Email Address">
+                            <input type="email" placeholder="Email Address" required>
                             <button>
-                                <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
-                                     height="24">
+                                <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                                     <path fill="none" d="M0 0h24v24H0z" />
                                     <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
                                 </svg>
                             </button>
                         </form>
                     </div>
-                    <br> <br> <br>
-
-
                 </div>
             </div>
 
@@ -201,34 +172,49 @@
                 <div class="row">
                     <div class="col-md-9">
                         <p>
-                            Copyright © 2024 a product of <a href="https://synapseailabs.com/"
-                                                                          style="color: #ffffff;">Book Hive(Pvt) Ltd.</a>
+                            Copyright © 2024 BookHive Online Books Selling Shop. All rights reserved.
                         </p>
                     </div>
                     <div class="col-md-3">
                         <div class="row">
                             <div class="col">
-                                <a href="termsofuse.html">
-                                    <p>Terms of Use</p>
-                                </a>
+                                <a href="termsofuse.html"><p>Terms of Use</p></a>
                             </div>
                             <div class="col">
-                                <a href="refundpolicy.html">
-                                    <p>Refund Policy</p>
-                                </a>
+                                <a href="refundpolicy.html"><p>Refund Policy</p></a>
                             </div>
                             <div class="col">
-                                <a href="privacypolicy.html">
-                                    <p>Privacy Policy</p>
-                                </a>
+                                <a href="privacypolicy.html"><p>Privacy Policy</p></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
     </footer>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector('.nav-item[href*="GenerateReport"]').addEventListener('click', function (e) {
+                e.preventDefault(); // Prevent the default link behavior
+
+                // Use AJAX to request the report generation
+                fetch('@Url.Action("GenerateReport", "Admin")')
+                    .then(response => response.blob())
+                    .then(data => {
+                        // Create a temporary link element to trigger the download
+                        const link = document.createElement('a');
+                        link.href = URL.createObjectURL(data);
+                        link.download = 'report.csv';
+                        link.click();
+                    })
+                    .catch(error => {
+                        console.error('Error generating report:', error);
+                    });
+            });
+        });
+    </script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

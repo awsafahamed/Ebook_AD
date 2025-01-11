@@ -57,7 +57,8 @@ else
 
     <h3 class="mt-4">Total: <span id="cart-total">@Model.Sum(i => i.Quantity * i.Book.Price).ToString("C")</span></h3>
 
-    <a asp-action="Checkout" class="btn btn-primary mt-3">Proceed to Checkout</a>
+    <a asp-controller="Cart" asp-action="Checkout" class="btn btn-primary mt-3">Proceed to Checkout</a>
+
 }
 
 <script>

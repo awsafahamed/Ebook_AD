@@ -15,10 +15,14 @@ namespace EBOOK_AD.Models
 
         [Required]
         [StringLength(1000)]
-        public string Comment { get; set; }
+        public string Content { get; set; }
 
         [Required]
         [Range(1, 5)]  // Rating between 1 and 5
         public int Rating { get; set; }
+
+        // Navigation properties to link to User and Book entities
+        public User User { get; set; }
+        public Book Book { get; set; }
     }
 }

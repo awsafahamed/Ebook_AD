@@ -1,4 +1,6 @@
-﻿@model EBOOK_AD.Models.Book
+﻿@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+}
 
 <section id="book-details" class="p-5">
     <div class="container">
@@ -27,5 +29,62 @@
                 </div>
             </div>
         </div>
+
+        <!-- Feedback Form Section -->
+        <hr class="my-5" />
+        <h3 class="mb-4">Submit Your Feedback</h3>
+        <form id="feedbackForm">
+            <input type="hidden" name="bookId" value="@Model.BookId" />
+
+            <div class="form-group">
+                <label for="comment">Comment</label>
+                <textarea name="comment" id="comment" class="form-control" required></textarea>
+            </div>
+
+            <div class="form-group mt-3">
+                <label for="rating">Rating (1 to 5)</label>
+                <select name="rating" id="rating" class="form-control" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-success mt-3">Submit Feedback</button>
+        </form>
+
+        <!-- Success or Error Message -->
+        <div id="feedbackMessage" class="mt-3"></div>
     </div>
 </section>
+
+<script>
+    $(document).ready(function () {
+        $("#feedbackForm").on("submit", function (e) {
+            e.preventDefault(); // Prevent the form from submitting normally
+
+            // Get form data
+            var formData = $(this).serialize();
+
+            // Send AJAX request
+            $.ajax({
+                url: '@Url.Action("SubmitFeedback", "Home")', // Change to correct controller/action
+                type: 'POST',
+                data: formData,
+                success: function (response) {
+                    // Show success message
+                    $('#feedbackMessage').html('<div class="alert alert-success">Thank you for your feedback!</div>');
+
+                    // Optionally, clear the form
+                    $('#feedbackForm')[0].reset();
+                },
+                error: function () {
+                    // Show error message
+                    $('#feedbackMessage').html('<div class="alert alert-danger">Something went wrong. Please try again.</div>');
+                }
+            });
+        });
+    });
+</script>

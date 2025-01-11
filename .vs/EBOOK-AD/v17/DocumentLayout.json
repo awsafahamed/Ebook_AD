@@ -1,0 +1,1000 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\views\\cart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\views\\cart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\views\\cart\\orderconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\views\\cart\\orderconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\views\\order\\orderconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\views\\order\\orderconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\views\\feedback\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\views\\feedback\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\views\\cart\\viewcart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\views\\cart\\viewcart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\views\\book\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\views\\book\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\views\\book\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\views\\book\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\views\\admin\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\views\\admin\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\views\\book\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\views\\book\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\views\\home\\books.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\views\\home\\books.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\models\\checkoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\models\\checkoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\models\\editorderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\models\\editorderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\views\\cart\\payment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\views\\cart\\payment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Migrations\\20250111105103_Update-Migj.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EBOOK-AD\\Migrations\\20250111105103_Update-Migj.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\migrations\\20250111081737_orderupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\migrations\\20250111081737_orderupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\migrations\\20241124114008_seventhcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\migrations\\20241124114008_seventhcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\migrations\\20241124101518_sixthcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\migrations\\20241124101518_sixthcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\migrations\\20241123122829_fourthcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\migrations\\20241123122829_fourthcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\migrations\\20241123083250_secondcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\migrations\\20241123083250_secondcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\migrations\\20241122184403_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\migrations\\20241122184403_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\migrations\\20241124120006_eightcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\migrations\\20241124120006_eightcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\migrations\\20241124071334_fifthcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\migrations\\20241124071334_fifthcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|c:\\users\\aaham\\desktop\\e-book -ad\\ebook-ad\\ebook-ad\\migrations\\20241123094823_thirdcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D39308-7DA9-409A-91C4-91E885B36379}|EBOOK-AD\\EBOOK-AD.csproj|solutionrelative:ebook-ad\\migrations\\20241123094823_thirdcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Program.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Program.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Program.cs",
+              "RelativeToolTip": "EBOOK-AD\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAUwC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T18:02:47.797Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Checkout.cshtml",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Cart\\Checkout.cshtml",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Views\\Cart\\Checkout.cshtml",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Cart\\Checkout.cshtml*",
+              "RelativeToolTip": "EBOOK-AD\\Views\\Cart\\Checkout.cshtml*",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAGkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-11T08:08:45.695Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Controllers\\CartController.cs",
+              "RelativeToolTip": "EBOOK-AD\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAMEAAAAAAAAAAAAqwNwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T11:57:33.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "EBOOK-AD\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAqwCQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T18:54:32.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Models\\Order.cs",
+              "RelativeToolTip": "EBOOK-AD\\Models\\Order.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAuwEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T04:00:06.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "orderConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Order\\orderConfirmation.cshtml",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Views\\Order\\orderConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Order\\orderConfirmation.cshtml",
+              "RelativeToolTip": "EBOOK-AD\\Views\\Order\\orderConfirmation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T10:22:15.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Cart\\OrderConfirmation.cshtml",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Views\\Cart\\OrderConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Cart\\OrderConfirmation.cshtml",
+              "RelativeToolTip": "EBOOK-AD\\Views\\Cart\\OrderConfirmation.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAqwBEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T12:52:44.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "EBOOK-AD\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA2wB8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T18:25:23.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Feedback\\Index.cshtml",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Views\\Feedback\\Index.cshtml",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Feedback\\Index.cshtml",
+              "RelativeToolTip": "EBOOK-AD\\Views\\Feedback\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAkwBkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T09:54:27.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Feedback.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Models\\Feedback.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Models\\Feedback.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Models\\Feedback.cs",
+              "RelativeToolTip": "EBOOK-AD\\Models\\Feedback.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAywBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T17:42:24.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "EBOOK-AD\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAiwLYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T17:22:34.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FeedbackController.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Controllers\\FeedbackController.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Controllers\\FeedbackController.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Controllers\\FeedbackController.cs",
+              "RelativeToolTip": "EBOOK-AD\\Controllers\\FeedbackController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCMAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:00:44.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Home\\Details.cshtml",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Views\\Home\\Details.cshtml",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Home\\Details.cshtml",
+              "RelativeToolTip": "EBOOK-AD\\Views\\Home\\Details.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAswFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T06:38:16.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Book\\Index.cshtml",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Views\\Book\\Index.cshtml",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Book\\Index.cshtml",
+              "RelativeToolTip": "EBOOK-AD\\Views\\Book\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACAAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T07:57:29.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ViewCart.cshtml",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Cart\\ViewCart.cshtml",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Views\\Cart\\ViewCart.cshtml",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Cart\\ViewCart.cshtml",
+              "RelativeToolTip": "EBOOK-AD\\Views\\Cart\\ViewCart.cshtml",
+              "ViewState": "AgIAACIAAAAAAAAAAAAqwFgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T11:42:41.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Book\\Create.cshtml",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Views\\Book\\Create.cshtml",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Book\\Create.cshtml",
+              "RelativeToolTip": "EBOOK-AD\\Views\\Book\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T07:47:44.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Order\\Index.cshtml",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Views\\Order\\Index.cshtml",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Order\\Index.cshtml",
+              "RelativeToolTip": "EBOOK-AD\\Views\\Order\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T09:28:39.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Admin\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Views\\Admin\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Admin\\_AdminLayout.cshtml",
+              "RelativeToolTip": "EBOOK-AD\\Views\\Admin\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAgwG8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T10:22:26.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "EBOOK-AD\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T03:40:14.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "EBOOK-AD\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAgwFkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T07:29:32.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Controllers\\BookController.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Controllers\\BookController.cs",
+              "RelativeToolTip": "EBOOK-AD\\Controllers\\BookController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAzwBIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:05:14.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Book\\Edit.cshtml",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Views\\Book\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Book\\Edit.cshtml",
+              "RelativeToolTip": "EBOOK-AD\\Views\\Book\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T10:11:55.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "login.css",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\css\\login.css",
+              "RelativeDocumentMoniker": "EBOOK-AD\\wwwroot\\css\\login.css",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\css\\login.css",
+              "RelativeToolTip": "EBOOK-AD\\wwwroot\\css\\login.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-24T03:26:14.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Books.cshtml",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Home\\Books.cshtml",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Views\\Home\\Books.cshtml",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Home\\Books.cshtml",
+              "RelativeToolTip": "EBOOK-AD\\Views\\Home\\Books.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T17:07:59.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "EBOOK-AD\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T10:24:22.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "EBOOK-AD\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAGkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T10:40:32.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "EBOOK-AD\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "EBOOK-AD\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-23T10:52:27.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Controllers\\UserController.cs",
+              "RelativeToolTip": "EBOOK-AD\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T18:51:43.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CheckoutViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Models\\CheckoutViewModel.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Models\\CheckoutViewModel.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Models\\CheckoutViewModel.cs",
+              "RelativeToolTip": "EBOOK-AD\\Models\\CheckoutViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAcwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T12:53:19.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Models\\Cart.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Models\\Cart.cs",
+              "RelativeToolTip": "EBOOK-AD\\Models\\Cart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T04:00:21.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ReportController.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Controllers\\ReportController.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Controllers\\ReportController.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Controllers\\ReportController.cs",
+              "RelativeToolTip": "EBOOK-AD\\Controllers\\ReportController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:01:32.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "EditOrderViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Models\\EditOrderViewModel.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Models\\EditOrderViewModel.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Models\\EditOrderViewModel.cs",
+              "RelativeToolTip": "EBOOK-AD\\Models\\EditOrderViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T11:20:24.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Payment.cshtml",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Cart\\Payment.cshtml",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Views\\Cart\\Payment.cshtml",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Cart\\Payment.cshtml",
+              "RelativeToolTip": "EBOOK-AD\\Views\\Cart\\Payment.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-11T09:44:26.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "20250111105103_Update-Migj.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Migrations\\20250111105103_Update-Migj.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Migrations\\20250111105103_Update-Migj.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Migrations\\20250111105103_Update-Migj.cs",
+              "RelativeToolTip": "EBOOK-AD\\Migrations\\20250111105103_Update-Migj.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T10:51:03.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Models\\Book.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Models\\Book.cs",
+              "RelativeToolTip": "EBOOK-AD\\Models\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T10:03:14.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Models\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Models\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Models\\RegisterViewModel.cs",
+              "RelativeToolTip": "EBOOK-AD\\Models\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T11:53:33.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "20250111081737_OrderUpdate.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Migrations\\20250111081737_OrderUpdate.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Migrations\\20250111081737_OrderUpdate.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Migrations\\20250111081737_OrderUpdate.cs",
+              "RelativeToolTip": "EBOOK-AD\\Migrations\\20250111081737_OrderUpdate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T08:17:38.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\User\\Index.cshtml",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Views\\User\\Index.cshtml",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\User\\Index.cshtml",
+              "RelativeToolTip": "EBOOK-AD\\Views\\User\\Index.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAswDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T09:51:43.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "EBOOK-AD\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAADIAAAAAAAAAAAAswFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T16:49:55.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Models\\User.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Models\\User.cs",
+              "RelativeToolTip": "EBOOK-AD\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T17:39:37.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Models\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "EBOOK-AD\\Models\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T11:57:54.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\appsettings.json",
+              "RelativeDocumentMoniker": "EBOOK-AD\\appsettings.json",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\appsettings.json",
+              "RelativeToolTip": "EBOOK-AD\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-22T06:19:42.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Home\\Register.cshtml",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Views\\Home\\Register.cshtml",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Home\\Register.cshtml",
+              "RelativeToolTip": "EBOOK-AD\\Views\\Home\\Register.cshtml",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T09:22:32.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Views\\Home\\Login.cshtml",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "EBOOK-AD\\Views\\Home\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T03:19:01.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "EBOOK-AD\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAswCMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T16:55:36.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "20241124120006_EightCreate.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Migrations\\20241124120006_EightCreate.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Migrations\\20241124120006_EightCreate.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Migrations\\20241124120006_EightCreate.cs",
+              "RelativeToolTip": "EBOOK-AD\\Migrations\\20241124120006_EightCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T12:00:06.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "20241124114008_SeventhCreate.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Migrations\\20241124114008_SeventhCreate.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Migrations\\20241124114008_SeventhCreate.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Migrations\\20241124114008_SeventhCreate.cs",
+              "RelativeToolTip": "EBOOK-AD\\Migrations\\20241124114008_SeventhCreate.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T11:40:09.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "20241124101518_SixthCreate.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Migrations\\20241124101518_SixthCreate.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Migrations\\20241124101518_SixthCreate.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Migrations\\20241124101518_SixthCreate.cs",
+              "RelativeToolTip": "EBOOK-AD\\Migrations\\20241124101518_SixthCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T10:15:19.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "20241124071334_FifthCreate.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Migrations\\20241124071334_FifthCreate.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Migrations\\20241124071334_FifthCreate.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Migrations\\20241124071334_FifthCreate.cs",
+              "RelativeToolTip": "EBOOK-AD\\Migrations\\20241124071334_FifthCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T07:13:35.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Report.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Models\\Report.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Models\\Report.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Models\\Report.cs",
+              "RelativeToolTip": "EBOOK-AD\\Models\\Report.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T17:43:03.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "EBOOK-AD\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T08:31:52.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "20241123122829_FourthCreate.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Migrations\\20241123122829_FourthCreate.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Migrations\\20241123122829_FourthCreate.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Migrations\\20241123122829_FourthCreate.cs",
+              "RelativeToolTip": "EBOOK-AD\\Migrations\\20241123122829_FourthCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T12:28:30.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "20241123094823_ThirdCreate.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Migrations\\20241123094823_ThirdCreate.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Migrations\\20241123094823_ThirdCreate.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Migrations\\20241123094823_ThirdCreate.cs",
+              "RelativeToolTip": "EBOOK-AD\\Migrations\\20241123094823_ThirdCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T09:48:23.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "20241123083250_SecondCreate.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Migrations\\20241123083250_SecondCreate.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Migrations\\20241123083250_SecondCreate.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Migrations\\20241123083250_SecondCreate.cs",
+              "RelativeToolTip": "EBOOK-AD\\Migrations\\20241123083250_SecondCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T08:32:50.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "EBOOK-AD\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T18:58:46.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "20241122184403_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Migrations\\20241122184403_InitialCreate.cs",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Migrations\\20241122184403_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Migrations\\20241122184403_InitialCreate.cs",
+              "RelativeToolTip": "EBOOK-AD\\Migrations\\20241122184403_InitialCreate.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T18:44:03.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Properties\\launchSettings.json",
+              "RelativeToolTip": "EBOOK-AD\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-22T06:19:48.826Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "EBOOK-AD\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\aaham\\Desktop\\E-book -AD\\EBOOK-AD\\EBOOK-AD\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "EBOOK-AD\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T05:56:48.131Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

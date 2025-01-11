@@ -1,14 +1,35 @@
 ﻿@model EBOOK_AD.Models.Order
 
-@{
-    ViewData["Title"] = "Order Confirmation";
-}
+<h2>Order Confirmation</h2>
 
-<h1>Order Confirmation</h1>
+<p>Your order has been placed successfully! Here are the details:</p>
 
-<p>Your order has been placed successfully!</p>
 <p>Order ID: @Model.OrderId</p>
+<p>Order Date: @Model.OrderDate</p>
+<p>Total Amount: @Model.TotalAmount</p>
 <p>Status: @Model.Status</p>
-<p>Total Amount: @Model.TotalAmount.ToString("C")</p>
+<p>Shipping Address: @Model.ShippingAddress</p>
 
-<!-- You could also show the order items here for confirmation -->
+<h3>Items in your order:</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Book Title</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <a href="c:\users\aaham\desktop\e-book -ad\ebook-ad\ebook-ad\views\cart\orderconfirmation.cshtml">c:\users\aaham\desktop\e-book -ad\ebook-ad\ebook-ad\views\cart\orderconfirmation.cshtml</a>
+    <tbody>
+        @foreach (var item in Model.OrderItems)
+        {
+            <tr>
+                <td>@item.Book.Title</td>
+                <td>@item.Quantity</td>
+                <td>@item.Price</td>
+                <td>@(item.Quantity * item.Price)</td>
+            </tr>
+        }
+    </tbody>
+</table>

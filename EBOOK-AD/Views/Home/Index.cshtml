@@ -57,41 +57,36 @@
 </section>
 
 
-<section id="books" class="p-5 h-100 text-center">
+<section id="books" class="p-5 text-center">
     <div class="container">
         <h2 class="mb-4">Our Latest eBooks</h2>
-        <div class="row" id="book-container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4" id="book-container">
             @foreach (var book in Model)
             {
-                <div class="col-md-3 mb-4">
-                    <div class="card-book-main h-100">
-                        <div class="card-book mb-3">
-                            @if (!string.IsNullOrEmpty(book.ImageUrl))
-                            {
-                                <img src="@book.ImageUrl" alt="@book.Title" class="img-fluid" style="height: 200px; object-fit: cover;" />
-                            }
-                            else
-                            {
-                                <div class="d-flex align-items-center justify-content-center" style="height: 200px; background: #f8f9fa; color: #6c757d;">
-                                    <span>No Image</span>
-                                </div>
-                            }
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm card-book-main">
+                        @if (!string.IsNullOrEmpty(book.ImageUrl))
+                        {
+                            <img src="@book.ImageUrl" alt="@book.Title" class="card-img-top rounded-top" style="height: 400px; object-fit: cover;" />
+                        }
+                        else
+                        {
+                            <div class="d-flex align-items-center justify-content-center bg-light rounded-top" style="height: 400px;">
+                                <span class="text-muted">No Image</span>
+                            </div>
+                        }
+                        <div class="card-body text-start">
+                            <h5 class="card-title text-dark">@book.Title</h5>
+                            <p class="mb-1 text-muted">Author: @book.Author</p>
                         </div>
-                        <div class="card-content ">
-                            <h5 >@book.Title</h5>
-                            
-                            <p class="mb-1 ">Author: @book.Author</p>
-                        </div>
-                        <div class="card-price">
-                         
-                            <p class="mb-1 d">Rs.@book.Price</p>
-                            <a href="@Url.Action("Details", "Home", new { id = book.BookId })" class="btn-View">View Details</a>
-
-                            <a class="btn btn-cart" asp-controller="Cart" asp-action="AddToCart" asp-route-bookId="@book.BookId" class="btn btn-primary">
-                                <i class="bi bi-bag"></i> Add to Cart
-                            </a>
-
-                     
+                        <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                            <p class="mb-0 fw-bold text-dark">Rs. @book.Price</p>
+                            <div>
+                                <a href="@Url.Action("Details", "Home", new { id = book.BookId })" class="btn btn-sm btn-outline-dark">View Details</a>
+                                <a class="btn btn-sm btn-danger btn-cart" data-book-id="@book.BookId" data-quantity="1">
+                                    <i class="bi bi-bag"></i> Add to Cart
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -101,44 +96,53 @@
 </section>
 
 <style>
-    .card-book{
-     
-        text-align:left;
-     
-   
+    #books {
+        background-color: #f8f9fa;
     }
 
-    .card-content {
-        text-align: left;
-        color: #000;
-        font-weight: 600;
+    .card-book-main {
+        border-radius: 12px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-        .card-content h5{
-            font-size:16px;
+        .card-book-main:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
 
-            .card-content p{
-              font-size:14px;
-            }
-    .card-price{
-        text-align:left;
-        color: #000;
+    .card-body {
+        padding: 1rem;
+    }
+
+    .card-title {
+        font-size: 16px;
         font-weight: 600;
     }
-    .btn-View{
-        font-size: 10px;
-        color: #000;
-        text-decoration: underline;
-        font-weight: 600;
+
+    .card-footer {
+        padding: 0.75rem 1rem;
     }
-    .btn-cart{
-        background: #b70000;
+
+    .btn-cart {
+        background-color: #b70000;
         color: #fff;
-        font-size: 10px;
-        margin-left: 10px;
+        font-size: 12px;
     }
+
+        .btn-cart:hover {
+            background-color: #900000;
+        }
+
+    .btn-outline-dark {
+        font-size: 12px;
+    }
+
+        .btn-outline-dark:hover {
+            background-color: #000;
+            color: #fff;
+        }
 </style>
+
 <!-- Features Section -->
 <section id="features" class="p-5 text-center">
     <div class="container">
@@ -184,5 +188,48 @@
             path: 'images/book.json', // Path to the Lottie JSON file
         });
     });
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Add click event listener to all Add to Cart buttons
+            document.querySelectorAll(".btn-cart").forEach(function (button) {
+                button.addEventListener("click", function (e) {
+                    e.preventDefault(); // Prevent the default action
+
+                    // Get book ID and quantity
+                    const bookId = this.getAttribute("data-book-id");
+                    const quantity = this.getAttribute("data-quantity");
+
+                    // Send AJAX request
+                    fetch(`/Cart/AddToCart?bookId=${bookId}&quantity=${quantity}`, {
+                        method: "POST",
+                        headers: {
+                            "X-Requested-With": "XMLHttpRequest",
+                            "Content-Type": "application/json",
+                        },
+                    })
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error("Network response was not ok");
+                            }
+                            return response.json();
+                        })
+                        .then(data => {
+                            if (data.success) {
+                                alert("Item added to cart!");
+                                // Optionally, update cart UI here
+                            } else {
+                                alert("Failed to add item to cart.");
+                            }
+                        })
+                        .catch(error => {
+                            console.error("There was a problem with the fetch operation:", error);
+                            alert("An error occurred. Please try again.");
+                        });
+                });
+            });
+        });
+
+
 
 </script>
